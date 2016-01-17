@@ -1,4 +1,4 @@
-{-# LANGUAGE BangPatterns, DeriveDataTypeable, FlexibleInstances, MultiParamTypeClasses, TemplateHaskell #-}
+{-# LANGUAGE BangPatterns, DataKinds, DeriveDataTypeable, FlexibleInstances, MultiParamTypeClasses #-}
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 module Hadoop.Protos.RefreshCallQueueProtocolProtos.RefreshCallQueueResponseProto (RefreshCallQueueResponseProto(..)) where
 import Prelude ((+), (/))
@@ -54,7 +54,7 @@ instance P'.ReflectDescriptor RefreshCallQueueResponseProto where
   getMessageInfo _ = P'.GetMessageInfo (P'.fromDistinctAscList []) (P'.fromDistinctAscList [])
   reflectDescriptorInfo _
    = Prelude'.read
-      "DescriptorInfo {descName = ProtoName {protobufName = FIName \".hadoop.common.RefreshCallQueueResponseProto\", haskellPrefix = [MName \"Hadoop\",MName \"Protos\"], parentModule = [MName \"RefreshCallQueueProtocolProtos\"], baseName = MName \"RefreshCallQueueResponseProto\"}, descFilePath = [\"Hadoop\",\"Protos\",\"RefreshCallQueueProtocolProtos\",\"RefreshCallQueueResponseProto.hs\"], isGroup = False, fields = fromList [], keys = fromList [], extRanges = [], knownKeys = fromList [], storeUnknown = False, lazyFields = False, makeLenses = False}"
+      "DescriptorInfo {descName = ProtoName {protobufName = FIName \".hadoop.common.RefreshCallQueueResponseProto\", haskellPrefix = [MName \"Hadoop\",MName \"Protos\"], parentModule = [MName \"RefreshCallQueueProtocolProtos\"], baseName = MName \"RefreshCallQueueResponseProto\"}, descFilePath = [\"Hadoop\",\"Protos\",\"RefreshCallQueueProtocolProtos\",\"RefreshCallQueueResponseProto.hs\"], isGroup = False, fields = fromList [], descOneofs = fromList [], keys = fromList [], extRanges = [], knownKeys = fromList [], storeUnknown = False, lazyFields = False, makeLenses = False}"
  
 instance P'.TextType RefreshCallQueueResponseProto where
   tellT = P'.tellSubMessage

@@ -6,6 +6,13 @@ resolver: lts-3.8
 # Local packages, usually specified by relative directory name
 packages:
 - hadoop-protos
+- location:
+    git: https://github.com/alexbiehl/protocol-buffers.git
+    commit: 97fe3d64764a24cc5eb23eac0006eccfe302d192
+  subdirs:
+    - .
+    - descriptor
+    - hprotoc
 
 # Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)
 extra-deps: []

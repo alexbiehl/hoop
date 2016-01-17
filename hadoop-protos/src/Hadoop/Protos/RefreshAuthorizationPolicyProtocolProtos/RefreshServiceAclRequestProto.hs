@@ -1,4 +1,4 @@
-{-# LANGUAGE BangPatterns, DeriveDataTypeable, FlexibleInstances, MultiParamTypeClasses, TemplateHaskell #-}
+{-# LANGUAGE BangPatterns, DataKinds, DeriveDataTypeable, FlexibleInstances, MultiParamTypeClasses #-}
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 module Hadoop.Protos.RefreshAuthorizationPolicyProtocolProtos.RefreshServiceAclRequestProto (RefreshServiceAclRequestProto(..))
        where
@@ -55,7 +55,7 @@ instance P'.ReflectDescriptor RefreshServiceAclRequestProto where
   getMessageInfo _ = P'.GetMessageInfo (P'.fromDistinctAscList []) (P'.fromDistinctAscList [])
   reflectDescriptorInfo _
    = Prelude'.read
-      "DescriptorInfo {descName = ProtoName {protobufName = FIName \".hadoop.common.RefreshServiceAclRequestProto\", haskellPrefix = [MName \"Hadoop\",MName \"Protos\"], parentModule = [MName \"RefreshAuthorizationPolicyProtocolProtos\"], baseName = MName \"RefreshServiceAclRequestProto\"}, descFilePath = [\"Hadoop\",\"Protos\",\"RefreshAuthorizationPolicyProtocolProtos\",\"RefreshServiceAclRequestProto.hs\"], isGroup = False, fields = fromList [], keys = fromList [], extRanges = [], knownKeys = fromList [], storeUnknown = False, lazyFields = False, makeLenses = False}"
+      "DescriptorInfo {descName = ProtoName {protobufName = FIName \".hadoop.common.RefreshServiceAclRequestProto\", haskellPrefix = [MName \"Hadoop\",MName \"Protos\"], parentModule = [MName \"RefreshAuthorizationPolicyProtocolProtos\"], baseName = MName \"RefreshServiceAclRequestProto\"}, descFilePath = [\"Hadoop\",\"Protos\",\"RefreshAuthorizationPolicyProtocolProtos\",\"RefreshServiceAclRequestProto.hs\"], isGroup = False, fields = fromList [], descOneofs = fromList [], keys = fromList [], extRanges = [], knownKeys = fromList [], storeUnknown = False, lazyFields = False, makeLenses = False}"
  
 instance P'.TextType RefreshServiceAclRequestProto where
   tellT = P'.tellSubMessage

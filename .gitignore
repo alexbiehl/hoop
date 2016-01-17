@@ -17,3 +17,4 @@ cabal.sandbox.config
 *.hp
 .DS_Store
 
+protoc-gen-haskell
