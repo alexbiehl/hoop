@@ -7,6 +7,15 @@ import           Filesystem.Path.CurrentOS
 import           Prelude                   hiding (FilePath)
 import           Turtle
 
+{- generate.hs takes all *.proto files from a hadoop source distribution.
+   It uses hprotoc as a plugin for protoc as hprotoc has some deficiencies
+   resolving names. By renaming hprotoc to protoc-gen-haskell protoc does 
+   the name resolving and protoc-gen-haskell does codegeneration only.
+   
+   The pathes from where the proto files are collected are listed in function 
+   hadoopProjects.
+-}
+
 parser :: Parser (FilePath, FilePath, Text)
 parser = (,,) <$> argPath "src" "hadoop sourcecode directory"
               <*> argPath "dest" "output directory for proto files"
